@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/clickVideo.css"> <!--Click Video function css-->
+   <link rel="stylesheet" href="assets/css/alart-popup.css"> <!--popup alert css -->
+   <link rel="stylesheet" href="assets/css/al-notify.css"> <!--Notify css -->
+</head>
+<body>
+    
+    <section class="full_width_video_section"> <!-- Start video section -->
+        <div class="al-protected-video-wapper" id="playVIDEO">
+            <video  id="myvideo">
+                <source src="assets/video/hello.mp4" type="video/mp4">
+            </video>
+            <div id="img-js-id" class="al-protect-button-overly icon-img-bg-pc pulsing"></div>
+        </div>
+    </section> <!--End Video Section-->
+
+<div class="al-alert-popup" id="al-alert-popup"> <!--START POPUP ALERT SECTION-->
+   <div class="al-alert-content-wapper">
+        <div class="al-alert-pp-header">
+            <h1>10 % off Special Offer!</h1>
+        </div>
+        <div class="al-alert-pp-content">
+            <h2>6 Bottles</h2>
+            <p>180 Day Supply</p>
+            <img src="assets/images/product.png" alt="Product image ">
+            <h3>Discount Price + 10% Save</h3>
+            <h3><s>$294</s> <span> $264 </span></h3>
+                <!-- <div class="d-flex">
+                    <div class="img">
+                        <img src="https://cdn.dribbble.com/users/934035/screenshots/2850232/20130911-icontel_clients-product.gif" alt="" srcset="">
+                    </div>
+                    <div class="text">
+                        <p>That made Diana Farris, a 47 year old mom of 2 from Texas, to suddenly dissolve 48 lbs of thick, ugly fat from her tummy, thighs, hips and face!</p>
+                    </div>
+                </div> -->
+
+                <h1>Only in the next <span class="count-wrapper"><span id="munuteCount"></span> : <span id="secondCount"></span></span> Minutes </h1>
+                <div class="discover-button">
+                    <a class="pulsing" href="#"> YES! I WANT AN ADDITIONAL 10% OFF AND EXPRESS FREE
+                        SHIPPING </a>
+                </div>
+            
+        </div>
+        <!-- <div class="al-alert-pp-footer">
+            <div id="myProgress">
+                <div id="myBar"></div>
+              </div>
+        </div> -->
+   </div>
+   <div class="al-popup-close" id="popup-close">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+</div>
+<div id="popupdoNotRemoveThis"></div><!--END POPUP ALERT SECTION-->
+<div id="show_notify"></div> <!--Show notify-->
+<script src="assets/js/al-notify.js"></script> <!--Notify js-->
+<script src="assets/js/clickvideo.js"></script> <!--click video js-->
+<script src="assets/js/alart-popup.js"></script> <!--alert popup js-->
+<script>
+  //pop under code
+
+// setTimeout(function () {
+//   var popup = window.open("https://aminitltd.com/","_blank","width=" +window.screen.availWidth +",height=" +window.screen.availHeight +",toolbar=1,scrollbars=1,status=1,resizable=1, behavior: smooth,").blur();
+//   window.open().close();
+//   window.focus()
+//   return (popup)?false:true;
+  
+// });
+</script>
+
+</body>
+</html>

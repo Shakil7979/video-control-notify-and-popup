@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/clickVideo.css"> <!--Click Video function css-->
+   <link rel="stylesheet" href="assets/css/alart-popup.css"> <!--popup alert css -->
+   <link rel="stylesheet" href="assets/css/al-notify.css"> <!--Notify css -->
+</head>
+<body>
+    
+    <section class="full_width_video_section"> <!-- Start video section -->
+        <div class="al-protected-video-wapper" id="playVIDEO">
+            <video  id="myvideo">
+                <source src="assets/video/hello.mp4" type="video/mp4">
+            </video>
+            <div id="img-js-id" class="al-protect-button-overly icon-img-bg-pc pulsing"></div>
+        </div>
+    </section> <!--End Video Section-->
+
+<div class="al-alert-popup" id="al-alert-popup"> <!--START POPUP ALERT SECTION-->
+   <div class="al-alert-content-wapper">
+        <div class="al-alert-pp-header">
+            <h1>STOP!</h1>
+            <div class="al-popup-close" id="popup-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="al-alert-pp-content">
+            <h1>In Just <span id="munuteCount"></span> : <span id="secondCount"></span>  </h1>
+            <h2>I'll Reveal The Thorny Outback Plant To Melt Away
+                1 lb of Fat Every 72 Hours!</h2>
+                <div class="d-flex">
+                    <div class="img">
+                        <img src="https://cdn.dribbble.com/users/934035/screenshots/2850232/20130911-icontel_clients-product.gif" alt="" srcset="">
+                    </div>
+                    <div class="text">
+                        <p>That made Diana Farris, a 47 year old mom of 2 from Texas, to suddenly dissolve 48 lbs of thick, ugly fat from her tummy, thighs, hips and face!</p>
+                    </div>
+                </div>
+                <div class="discover-button">
+                    <a class="pulsing" href="#"> YES! DISCOVER IT NOW </a>
+                </div>
+            
+        </div>
+        <div class="al-alert-pp-footer">
+            <div id="myProgress">
+                <div id="myBar"></div>
+              </div>
+        </div>
+   </div>
+</div><!--END POPUP ALERT SECTION-->
+<div id="show_notify"></div> <!--Show notify-->
+<script src="assets/js/al-notify.js"></script> <!--Notify js-->
+<script src="assets/js/clickvideo.js"></script> <!--click video js-->
+<script src="assets/js/alart-popup.js"></script> <!--alert popup js-->
+<script>
+    $.notify("Alert!");
+
+    
+
+
+$(window).on('load', function() {
+    // Notification 1
+    setTimeout(function() {
+        var time = "2 minutes ago";
+        $.notify({
+            icon: 'assets/images/user-1.png',
+            title: 'Byron Morgan From Australia',
+            message: 'Recently purchased <span class="blue">2500 CIC</span> tokens'
+        },{
+            type: 'minimalist',
+            placement: {
+                from: "bottom",
+                align: "left"
+            },
+            animate: {
+                enter: 'animated fadeInLeftBig',
+                exit: 'animated fadeOutLeftBig'
+            },
+            icon_type: 'image',
+            template: '<div data-notify="container" class="alert alert-{0}" role="alert">' +
+                '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+                '<div id="image">' +
+                '<img data-notify="icon" class="rounded-circle float-left">' +
+                '</div><div id="text">' +
+                '<span data-notify="title">{1}</span>' +
+                '<span data-notify="message">{2}</span>' +
+                '<span data-notify="time">'+time+'</span>' +
+                '</div>'+
+            '</div>'
+        });
+    },5000);
+
+    // Notification 2
+    setTimeout(function() {
+        var time = "20 seconds ago";
+        $.notify({
+            icon: 'assets/images/user-11.png',
+            title: 'Peter Lee From Canada',
+            message: 'Recently purchased <span class="blue">1850 CIC</span> tokens'
+        },{
+            type: 'minimalist',
+            placement: {
+                from: "bottom",
+                align: "left"
+            },
+            animate: {
+                enter: 'animated fadeInLeftBig',
+                exit: 'animated fadeOutLeftBig'
+            },
+            icon_type: 'image',
+            template: '<div data-notify="container" class="alert alert-{0}" role="alert">' +
+                '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+                '<div id="image">' +
+                '<img data-notify="icon" class="rounded-circle float-left">' +
+                '</div><div id="text">' +
+                '<span data-notify="title">{1}</span>' +
+                '<span data-notify="message">{2}</span>' +
+                '<span data-notify="time">'+time+'</span>' +
+                '</div>'+
+            '</div>'
+        });
+    }, 15000);
+});
+</script>
+
+</body>
+</html>

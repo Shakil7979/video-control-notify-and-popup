@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+video{
+    width: 100%;
+}
+.video-active {
+    max-width: 100%;
+    margin: 0 auto;
+    /* height: 100vh; */
+}
+.full_width_video_section{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.al-protected-video-wapper {
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    border: 10px solid gray;
+    position: relative;
+}
+.allow-full-screen {
+    max-width: 100%;
+    background: black;
+    border: none;
+}
+.al-protect-button-overly {
+    width: 100%;
+    background: transparent;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.icon-img-bg-pc {
+    background-image: url(../images/video-cover.png) !important;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pulsing {
+transform: scale(1);
+animation: pulsing 1s infinite
+}
+
+@keyframes pulsing {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .7)
+    }
+
+    70% {
+        transform: scale(1.034);
+        box-shadow: 0 0 0 10px transparent
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 transparent
+    }
+}

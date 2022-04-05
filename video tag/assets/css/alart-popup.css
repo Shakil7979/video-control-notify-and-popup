@@ -1,0 +1,125 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+.al-alert-popup {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.69);
+    max-width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: none;
+}
+.al-alert-content-wapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #bd3326;
+    /* height: 100%; */
+    border-radius: 7px;
+    padding: 10px;
+    color: #fff;
+}
+.al-alert-pp-header {
+    width: 100%;
+    /* display: flex; */
+    position: relative;
+    color: #fff;
+    /* justify-content: space-between; */
+    text-align: center;
+}
+.al-popup-close {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    /* padding: 10px; */
+    border-radius: 50%;
+    background: #a54444;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+}
+.al-alert-pp-content {
+    background: #fff;
+    padding: 10px;
+    color: #333;
+    text-align: center;
+}
+.al-alert-pp-content img {
+    border-radius: 50%;
+}
+.al-alert-pp-header h1 {
+    padding-bottom: 10px;
+}
+.al-alert-pp-footer {
+    padding: 10px;
+}
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    border-radius: 50px;
+}
+  
+#myBar {
+    width: 100%;
+    height: 10px;
+    background-color: #04AA6D;
+    border-radius: 50px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.img img {
+    width: 100%;
+}
+.al-alert-popup p {
+    font-size: 22px;
+}
+@keyframes pulsing {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .7)
+    }
+
+    70% {
+        transform: scale(1.034);
+        box-shadow: 0 0 0 10px transparent
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 transparent
+    }
+}
+.discover-button a {
+    display: inline-block;
+    background: green;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 34px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 80%;
+    margin-bottom: 14px;
+    text-decoration: none;
+}
